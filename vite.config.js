@@ -3,6 +3,8 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [
-    tailwindcss(), // Menghubungkan Tailwind v4 ke Vite
+    tailwindcss(),
   ],
+  // Tambahkan baris ini. Pastikan namanya sama dengan nama repository GitHub Anda
+  base: '/portofolio-pushbike/', 
 })
