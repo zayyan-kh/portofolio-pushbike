@@ -5,6 +5,6 @@ export default defineConfig({
   plugins: [
     tailwindcss(),
   ],
-  // Pastikan nama di bawah ini SAMA PERSIS dengan nama repository Anda di GitHub
+  // Nama ini harus SAMA PERSIS dengan nama repository di GitHub
   base: '/portofolio-pushbike/', 
 })
