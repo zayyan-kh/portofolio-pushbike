@@ -10,19 +10,19 @@
 </head>
 <body>
 
-    <div class="max-w-[480px] mx-auto min-h-screen border-x border-white/5">
+    <div class="max-w-[480px] mx-auto min-h-screen border-x border-white/5 shadow-2xl">
         
         <nav class="sticky top-0 z-50 bg-[#020617]/80 backdrop-blur-md p-6 flex justify-between items-center border-b border-white/5">
             <h1 class="font-black italic text-xl uppercase tracking-tighter">
                 ZAYYAN<span class="text-bike-red">RED</span><span class="text-bike-blue">BLUE</span>
             </h1>
-            <span class="text-[10px] bg-bike-blue/20 text-bike-blue px-3 py-1 rounded-full font-bold border border-bike-blue/30">BOYS 2022</span>
+            <span class="text-[10px] bg-bike-blue/20 text-bike-blue px-3 py-1 rounded-full font-bold border border-bike-blue/30 uppercase italic">BOYS 2022</span>
         </nav>
 
         <main class="p-6 space-y-12">
             
             <section data-aos="zoom-in" class="relative rounded-[2.5rem] overflow-hidden shadow-2xl">
-                <img src="/hero-zayyan.webp" alt="Zayyan" class="w-full aspect-[4/5] object-cover">
+                <img src="hero-zayyan.webp" alt="Zayyan" class="w-full aspect-[4/5] object-cover">
                 <div class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-[#020617] via-transparent">
                     <p class="text-bike-red font-black text-xs uppercase tracking-widest mb-2">Moving With Za</p>
                     <h2 class="text-4xl font-black italic uppercase leading-none">
@@ -32,19 +32,23 @@
                 </div>
             </section>
 
-            <div class="grid grid-cols-2 gap-3">
-                <a href="#" class="flex items-center justify-center gap-2 bg-white/5 py-4 rounded-2xl border border-white/10">
+            <div class="grid grid-cols-2 gap-3" data-aos="fade-up">
+                <a href="https://instagram.com/zayyan.kh" target="_blank" class="flex items-center justify-center gap-2 bg-white/5 py-4 rounded-2xl border border-white/10 active:bg-white/10 transition-all">
                     <i data-lucide="instagram" class="text-pink-500"></i>
                     <span class="text-[10px] font-bold uppercase tracking-widest">Instagram</span>
                 </a>
-                <a href="#" class="flex items-center justify-center gap-2 bg-white/5 py-4 rounded-2xl border border-white/10">
+                <a href="https://tiktok.com/@movingwithza" target="_blank" class="flex items-center justify-center gap-2 bg-white/5 py-4 rounded-2xl border border-white/10 active:bg-white/10 transition-all">
                     <i data-lucide="music-2" class="text-cyan-400"></i>
                     <span class="text-[10px] font-bold uppercase tracking-widest">TikTok</span>
+                </a>
+                <a href="https://youtube.com/@movingwithza" target="_blank" class="col-span-2 flex items-center justify-center gap-3 bg-bike-red py-4 rounded-2xl shadow-lg shadow-bike-red/30 active:scale-95 transition-transform">
+                    <i data-lucide="youtube" class="text-white"></i>
+                    <span class="text-[10px] font-bold uppercase italic text-white tracking-[0.2em]">YouTube Channel</span>
                 </a>
             </div>
 
             <section data-aos="fade-up" class="space-y-4">
-                <h3 class="font-black italic text-xl flex items-center gap-2">
+                <h3 class="font-black italic text-xl flex items-center gap-2 tracking-tighter">
                     <span class="w-6 h-1 bg-bike-red"></span> PRESTASI
                 </h3>
                 <div class="glass-red p-6 rounded-[2rem] flex items-center gap-4">
@@ -60,19 +64,20 @@
             </section>
 
             <section data-aos="fade-up" class="space-y-4">
-                <h3 class="font-black italic text-xl flex items-center gap-2">
+                <h3 class="font-black italic text-xl flex items-center gap-2 tracking-tighter">
                     <span class="w-6 h-1 bg-bike-blue"></span> KOMUNITAS
                 </h3>
                 <div class="glass-blue p-8 rounded-[2.5rem] relative overflow-hidden">
                     <div class="relative z-10">
-                        <span class="text-[8px] font-black bg-white/20 px-3 py-1 rounded uppercase tracking-widest">Member Sejak Juni 2025</span>
-                        <h4 class="text-2xl font-black italic uppercase mt-4 leading-none">PUSHBIKE<br>KARAWANG</h4>
+                        <span class="text-[8px] font-black bg-white/20 px-3 py-1 rounded uppercase tracking-widest border border-white/10">Member Sejak Juni 2025</span>
+                        <h4 class="text-2xl font-black italic uppercase mt-4 leading-none tracking-tighter">PUSHBIKE<br>KARAWANG</h4>
                         <p class="text-xs mt-3 opacity-70 leading-relaxed font-medium">Tumbuh bersama komunitas pushbike terbesar di Karawang.</p>
                         <div class="mt-8 flex justify-between items-center bg-white/5 p-4 rounded-2xl border border-white/10">
                             <span class="text-[9px] font-bold">@pushbikekarawang.official</span>
                             <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
                         </div>
                     </div>
+                    <i data-lucide="users" class="absolute -bottom-6 -right-6 w-32 h-32 opacity-5 pointer-events-none"></i>
                 </div>
             </section>
 
@@ -82,7 +87,7 @@
             <p class="text-white font-black italic text-sm tracking-[0.5em] uppercase">
                 MOVING WITH ZA <span class="text-bike-red">©</span> 2026
             </p>
-            <p class="text-slate-600 text-[9px] uppercase tracking-widest mt-2">Karawang • West Java • Indonesia</p>
+            <p class="text-slate-600 text-[9px] uppercase tracking-widest mt-2 font-bold">Karawang • Indonesia</p>
         </footer>
     </div>
 
