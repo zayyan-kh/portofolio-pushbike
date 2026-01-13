@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bike-red: #DC2626;
+  --color-bike-blue: #2563EB;
+}
+
+@layer base {
+  body {
+    background-color: #020617; /* Slate 950 */
+    @apply text-white antialiased;
+  }
+}
+
+@layer components {
+  /* Efek Glassmorphism Biru Tebal untuk Komunitas */
+  .glass-blue {
+    background: rgba(37, 99, 235, 0.2);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Efek Glassmorphism Merah untuk Prestasi */
+  .glass-red {
+    background: rgba(220, 38, 38, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(220, 38, 38, 0.2);
+  }
+}
+
+/* Mengunci ukuran ikon Lucide agar tidak raksasa */
+svg {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
