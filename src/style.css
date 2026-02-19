@@ -3,36 +3,54 @@
 @theme {
   --color-bike-red: #DC2626;
   --color-bike-blue: #2563EB;
+  --color-race-purple: #8b5cf6;
 }
 
 @layer base {
   body {
-    background-color: #020617; /* Slate 950 */
+    background-color: #020617;
     @apply text-white antialiased;
   }
 }
 
 @layer components {
-  /* Efek Glassmorphism Biru Tebal untuk Komunitas */
+  /* Efek Glassmorphism Premium */
+  .glass-red {
+    background: linear-gradient(145deg, rgba(220, 38, 38, 0.15), rgba(2, 6, 23, 0.6));
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(220, 38, 38, 0.2);
+  }
+
   .glass-blue {
-    background: rgba(37, 99, 235, 0.2);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    background: linear-gradient(145deg, rgba(37, 99, 235, 0.15), rgba(2, 6, 23, 0.6));
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(37, 99, 235, 0.2);
+  }
+
+  .glass-purple {
+    background: linear-gradient(145deg, rgba(139, 92, 246, 0.1), rgba(2, 6, 23, 0.6));
+    backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  /* Efek Glassmorphism Merah untuk Prestasi */
-  .glass-red {
-    background: rgba(220, 38, 38, 0.1);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(220, 38, 38, 0.2);
+  /* Neon Glow Effects */
+  .text-red-glow {
+    color: var(--color-bike-red);
+    text-shadow: 0 0 10px rgba(220, 38, 38, 0.8), 0 0 20px rgba(220, 38, 38, 0.4);
   }
-}
 
-/* Mengunci ukuran ikon Lucide agar tidak raksasa */
-svg {
-  width: 24px;
-  height: 24px;
-  display: inline-block;
+  .text-blue-glow {
+    color: var(--color-bike-blue);
+    text-shadow: 0 0 10px rgba(37, 99, 235, 0.8), 0 0 20px rgba(37, 99, 235, 0.4);
+  }
+
+  /* Race Item Style */
+  .race-item {
+    @apply flex items-stretch bg-white/5 border border-white/10 rounded-2xl overflow-hidden transition-all duration-300;
+  }
+  .race-item:hover {
+    @apply translate-x-1 border-race-purple/50 bg-white/10;
+  }
 }
