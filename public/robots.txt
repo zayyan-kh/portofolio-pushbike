@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zayyan-kh.github.io/portofolio-pushbike/sitemap.xml
